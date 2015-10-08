@@ -1,6 +1,13 @@
 doctype
-- var title = '博多執筆規定'
-- var version = 'beta'
+-
+	title = '博多執筆規定'
+	version = 'beta'
+	url = {
+		hakatashi: 'https://hakatashi.com/',
+		CC0: 'https://creativecommons.org/publicdomain/zero/1.0/',
+		repository: 'https://github.com/hakatashi/HakataWritingRules',
+		originalURL: 'https://raw.githubusercontent.com/hakatashi/HakataWritingRules/master/HakataWritingRules.html',
+	}
 html
 	head
 		title= title + ' ' + version
@@ -11,9 +18,9 @@ html
 		h2 総則
 		
 		ol
-			li 本文書の目的は、[博多市](https://hakatashi.com/)が個人的に執筆する自然言語の文章の表記ルールを一定化することであり、これに類さない他の文章に即決的に適用されるものではない。
-			li 本文書の全体は、[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)のもとでライセンスされ、複製・改変・再配布・販売を含む一切の利用が許可される。これは本文書の過去のバージョンすべてに遡って適用される。
-			li 本文書の原本は、 https://github.com/hakatashi/HakataWritingRules にホスティングされる。最新のものは https://raw.githubusercontent.com/hakatashi/HakataWritingRules/master/HakataWritingRules.html で入手することができる。
+			li 本文書の目的は、<a href="#{url.hakatashi}">博多市</a>が個人的に執筆する自然言語の文章の表記ルールを一定化することであり、これに類さない他の文章に即決的に適用されるものではない。
+			li 本文書の全体は、<a href="#{url.CC0}">CC0 1.0 Universal</a> のもとでライセンスされ、複製・改変・再配布・販売を含む一切の利用が許可される。これは本文書の過去のバージョンすべてに遡って適用される。
+			li 本文書の原本は、<a href="#{url.repository}">#{url.repository}</a> にホスティングされる。最新のものは <a href="#{url.originalURL}">#{url.originalURL}</a> で入手することができる。
 			li 本文書の規定は、日本語と英語の表記に対して適用され、その他の言語の表記については、特にこれを定めない。
 
 		h2 日本語
