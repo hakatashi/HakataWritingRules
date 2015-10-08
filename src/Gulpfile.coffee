@@ -37,4 +37,7 @@ gulp.task 'dist', ->
 	.pipe libs.rename (file) -> file.extname = '.md'
 	.pipe gulp.dest paths.dist
 
+gulp.task 'watch', ->
+	gulp.watch paths.src, ['build']
+
 gulp.task 'default', ['test']
