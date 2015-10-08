@@ -1,0 +1,28 @@
+{
+  "name": "hakata-writing-rules",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Generator script for HakataWritingRules",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakatashi/HakataWritingRules.git"
+  },
+  "author": "hakatashi",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/hakatashi/HakataWritingRules/issues"
+  },
+  "homepage": "https://github.com/hakatashi/HakataWritingRules#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-html5-lint": "^1.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
