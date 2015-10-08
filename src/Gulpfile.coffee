@@ -19,7 +19,7 @@ libs.toMarkdown = ->
 
 gulp.task 'build', ->
 	gulp.src paths.src
-	.pipe libs.jade()
+	.pipe libs.jade locals: version: 'beta'
 	.pipe gulp.dest '.'
 	.pipe libs.toMarkdown()
 	.pipe libs.rename (file) -> file.extname = '.md'
@@ -30,7 +30,11 @@ gulp.task 'test', ['build'], ->
 	.pipe libs.html5Lint()
 
 gulp.task 'dist', ->
-	gulp.src [paths.html, paths.md]
+	gulp.src paths.src
+	.pipe libs.jade locals: version: pkg.version
+	.pipe gulp.dest paths.dist
+	.pipe libs.toMarkdown()
+	.pipe libs.rename (file) -> file.extname = '.md'
 	.pipe gulp.dest paths.dist
 
 gulp.task 'default', ['test']
