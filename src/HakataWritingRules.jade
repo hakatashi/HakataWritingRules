@@ -7,6 +7,10 @@ doctype html
 		repository: 'https://github.com/hakatashi/HakataWritingRules',
 		originalURL: 'https://raw.githubusercontent.com/hakatashi/HakataWritingRules/master/HakataWritingRules.html',
 	}
+
+mixin example(text)
+	p.example= '例: ' + text
+
 html
 	head
 		title= title + ' ' + version
@@ -29,12 +33,12 @@ html
 		ol
 			li 現代日本語を用いる。
 
-				p.example 踏切前で電車が立ち往生という下衆みたいな状況に陥ってる
+				+example('踏切前で電車が立ち往生という下衆みたいな状況に陥ってる')
 
 				ol
 					li 上代日本語、中古日本語、中世日本語、近世日本語を用いることによって文体に特別の効果が期待されるものは、この限りではない。
 
-						p.example 愛なき岸に花は咲かまし
+						+example('愛なき岸に花は咲かまし')
 
 			li 現代仮名遣いを用いる。
 
