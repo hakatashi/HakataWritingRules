@@ -1,0 +1,7 @@
+0.0.0:
+  summary: The chaotic Creation
+0.1.0:
+  summary: First applicable release
+  changes:
+    - Cyclize the automatic generation of documentation
+    - HTML and Markdown supported
