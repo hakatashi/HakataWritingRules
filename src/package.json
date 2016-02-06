@@ -20,6 +20,7 @@
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.0",
+    "gulp-asianbreak-html": "^1.1.1",
     "gulp-html5-lint": "^1.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^0.10.0",

@@ -20,6 +20,7 @@ libs.toMarkdown = ->
 gulp.task 'build', ->
 	gulp.src paths.src
 	.pipe libs.jade locals: version: 'beta'
+	.pipe libs.asianbreakHtml()
 	.pipe gulp.dest '.'
 	.pipe libs.toMarkdown()
 	.pipe libs.rename (file) -> file.extname = '.md'
