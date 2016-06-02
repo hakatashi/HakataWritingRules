@@ -5,7 +5,7 @@
   "description": "Generator script for HakataWritingRules",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "cd src && gulp test"
   },
   "repository": {
     "type": "git",
