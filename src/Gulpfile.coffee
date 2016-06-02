@@ -1,6 +1,6 @@
 gulp = require 'gulp'
 libs = require('gulp-load-plugins')()
-pkg = require './package.json'
+pkg = require '../package.json'
 transform = require 'vinyl-transform'
 asianbreak = require 'asianbreak-html'
 
