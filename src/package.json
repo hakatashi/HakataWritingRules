@@ -18,14 +18,15 @@
   },
   "homepage": "https://github.com/hakatashi/HakataWritingRules#readme",
   "devDependencies": {
+    "asianbreak-html": "^1.0.1",
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.0",
-    "gulp-asianbreak-html": "^1.1.1",
     "gulp-html5-lint": "^1.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-rename": "^1.2.2",
     "through2": "^2.0.0",
-    "to-markdown": "^2.0.0"
+    "to-markdown": "^2.0.0",
+    "vinyl-transform": "^1.0.0"
   }
 }

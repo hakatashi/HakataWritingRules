@@ -1,6 +1,8 @@
 gulp = require 'gulp'
 libs = require('gulp-load-plugins')()
 pkg = require './package.json'
+transform = require 'vinyl-transform'
+asianbreak = require 'asianbreak-html'
 
 toMarkdown = require 'to-markdown'
 through = require 'through2'
@@ -20,7 +22,7 @@ libs.toMarkdown = ->
 gulp.task 'build', ->
 	gulp.src paths.src
 	.pipe libs.jade locals: version: 'beta'
-	.pipe libs.asianbreakHtml()
+	.pipe transform asianbreak
 	.pipe gulp.dest '.'
 	.pipe libs.toMarkdown()
 	.pipe libs.rename (file) -> file.extname = '.md'
