@@ -1,5 +1,7 @@
 # 博多執筆規定 beta
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hakatashi/HakataWritingRules.svg)](https://greenkeeper.io/)
+
 ## 総則
 
 1. 本文書の目的は、[博多市](https://hakatashi.com/)が個人的に執筆する自然言語の文章の表記ルールを一定化することであり、これに類さない他の文章に即決的に適用されるものではない。
