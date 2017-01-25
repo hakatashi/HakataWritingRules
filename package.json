@@ -25,7 +25,7 @@
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "through2": "^2.0.0",
+    "through2": "^2.0.3",
     "to-markdown": "^3.0.0",
     "vinyl-transform": "^1.0.0"
   }
