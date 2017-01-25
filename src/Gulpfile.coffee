@@ -28,7 +28,7 @@ gulp.task 'build', ->
 	.pipe libs.rename (file) -> file.extname = '.md'
 	.pipe gulp.dest '.'
 
-gulp.task 'test', ['build'], ->
+gulp.task 'test', gulp.series 'build', ->
 	gulp.src paths.html
 	.pipe libs.html5Lint()
 
@@ -41,6 +41,6 @@ gulp.task 'dist', ->
 	.pipe gulp.dest paths.dist
 
 gulp.task 'watch', ->
-	gulp.watch paths.src, ['build']
+	gulp.watch paths.src, 'build'
 
-gulp.task 'default', ['test']
+gulp.task 'default', gulp.series 'test'
